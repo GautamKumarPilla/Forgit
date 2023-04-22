@@ -1,0 +1,164 @@
+<html>
+    <body>
+         <h1 style="display: inline-block; ">Score:</h1>
+        <h1 style="display: inline-block;"><span id="ad">0</span>-<span id="bd">0</span></h1><br>
+        <button id="b0"   onclick= btn0()  ; style="background-color:bisque; color:blueviolet; padding: 20px; border-radius:50%; height:70px; margin: 10px; width: 50px;"><span id="a0">0</span></button>
+        <button id="b1"   onclick= btn1()  ; style="background-color:bisque; color:blueviolet; padding: 20px; border-radius:50%; height:70px; margin: 10px; width: 50px;"><span id="a1">1</span></button>
+        <button id="b2"   onclick= btn2()  ; style="background-color:bisque; color:blueviolet; padding: 20px; border-radius:50%; height:70px; margin: 10px; width: 50px;"><span id="a2">2</span></button>
+        <button id="b3"   onclick= btn3()  ; style="background-color:bisque; color:blueviolet; padding: 20px; border-radius:50%; height:70px; margin: 10px; width: 50px;"><span id="a3">3</span></button>
+        <button id="b4"   onclick= btn4()  ; style="background-color:bisque; color:blueviolet; padding: 20px; border-radius:50%; height:70px; margin: 10px; width: 50px;"><span id="a4">4</span></button>
+        <button id="b5"   onclick= btn5()  ; style="background-color:bisque; color:blueviolet; padding: 20px; border-radius:50%; height:70px; margin: 10px; width: 50px;"><span id="a5">5</span></button>
+        <button id="b6"   onclick= btn6()  ; style="background-color:bisque; color:blueviolet; padding: 20px; border-radius:50%; height:70px; margin: 10px; width: 50px;"><span id="a6">6</span></button>
+        <button id="wide" onclick= btn7()  ; style="background-color:bisque; color:green; padding: 20px; border-radius:50%; height:60px; margin: 10px; width: 90px;">     <span id="a7">Wide</span></button>
+        <button id="wick" onclick= btn8()  ; style="background-color:bisque; color:red; padding: 20px; border-radius:50%; height:60px; margin: 10px; width: 90px;">       <span id="a8">Wicket</span></button><br><br><br>
+        <div id="md"> </div>
+        
+    <script>
+        var span0 = document.getElementById('ad'); 
+        var span1 = document.getElementById('bd'); 
+        var sp0 = document.getElementById('a0');
+        var sp1 = document.getElementById('a1');
+        var sp2 = document.getElementById('a2');
+        var sp3 = document.getElementById('a3');
+        var sp4 = document.getElementById('a4');
+        var sp5 = document.getElementById('a5');
+        var sp6 = document.getElementById('a6');
+        var sp7 = document.getElementById('a7');
+        var sp8 = document.getElementById('a8');  var mdiv= document.getElementById('md');
+
+        var bt0 = document.createElement('button');
+            bt0.innerHTML = sp0.innerHTML;
+            bt0.style.padding = 20;
+            bt0.style.borderRadius = '50%';
+            bt0.style.margin = 3;
+            bt0.style.height = 50;
+            bt0.style.width = 88;
+          //bt0.style.backgroundColor= 'wheat';
+      function btn0(){
+        span0.innerHTML = +(span0.innerHTML);
+        mdiv.appendChild(bt0);
+      }
+      var bt1 = document.createElement('button'); var b1=0;
+          bt1.innerHTML = sp1.innerHTML;
+          bt1.style.padding = 20;
+          bt1.style.borderRadius = '50%';
+          bt1.style.margin = 3;
+          bt1.style.height = 50;
+          bt1.style.width = 88;
+          bt1.style.backgroundColor= 'violet';
+
+      function btn1(){
+        b1=1;
+        span0.innerHTML = +(span0.innerHTML)+ b1;
+         mdiv.appendChild(bt1);
+        
+      }
+      var bt2 = document.createElement('button'); var b2=0;
+          bt2.innerHTML = sp2.innerHTML;
+          bt2.style.padding = 20;
+          bt2.style.borderRadius = '50%';
+          bt2.style.margin = 3;
+          bt2.style.height = 50;
+          bt2.style.width = 88;
+          bt2.style.backgroundColor= 'orange';
+
+      function btn2(){
+         b2=2;  //b2=+2
+        span0.innerHTML = +(span0.innerHTML)+ b2;
+        if(btn2 === true){
+         mdiv.appendChild(bt2);
+        }
+        mdiv.appendChild(bt2);
+
+      }
+      var bt3 = document.createElement('button'); var b3=0;
+          bt3.innerHTML = sp3.innerHTML;
+          bt3.style.padding = 20;
+          bt3.style.borderRadius = '50%';
+          bt3.style.margin = 3;
+          bt3.style.height = 50;
+          bt3.style.width = 88;
+          bt3.style.backgroundColor= 'limegreen';
+
+      function btn3(){  b3=3;
+        span0.innerHTML = +(span0.innerHTML)+ b3;
+         mdiv.appendChild(bt3);
+        
+      }
+      var bt4 = document.createElement('button'); var b4=0;
+          bt4.innerHTML = sp4.innerHTML;
+          bt4.style.padding = 20;
+          bt4.style.borderRadius = '50%';
+          bt4.style.margin = 3;
+          bt4.style.height = 50;
+          bt4.style.width = 88;
+          bt4.style.backgroundColor= 'indianred';
+
+      function btn4(){  b4=4;
+        span0.innerHTML = +(span0.innerHTML)+ b4;
+         mdiv.appendChild(bt4);
+        
+      }
+      var bt5 = document.createElement('button'); var b5=0;
+          bt5.innerHTML = sp5.innerHTML;
+          bt5.style.padding = 20;
+          bt5.style.borderRadius = '50%';
+          bt5.style.margin = 3;
+          bt5.style.height = 50;
+          bt5.style.width = 88;
+          bt5.style.backgroundColor= 'blue';
+
+      function btn5(){   b5=5;
+        span0.innerHTML = +(span0.innerHTML)+ b5;
+         mdiv.appendChild(bt5);
+        
+      }
+      var bt6 = document.createElement('button'); var b6=0;
+          bt6.innerHTML = sp6.innerHTML;
+          bt6.style.padding = 20;
+          bt6.style.borderRadius = '50%';
+          bt6.style.margin = 3;
+          bt6.style.height = 50;
+          bt6.style.width = 88;
+          bt6.style.backgroundColor= 'teal';
+
+      function btn6(){  b6=6;
+        span0.innerHTML = +(span0.innerHTML)+ b6;
+        mdiv.appendChild(bt6);
+        
+      }
+      var bt7 = document.createElement('button'); ;
+          bt7.innerHTML = sp7.innerHTML;
+          bt7.style.padding = 20;
+          bt7.style.borderRadius = '50%';
+          bt7.style.margin = 3;
+          bt7.style.height = 50;
+          bt7.style.width = 88;
+          bt7.style.backgroundColor= 'yellow';
+
+      function btn7(){  let count=1;
+        span0.innerHTML = +(span0.innerHTML)+ count;
+        mdiv.appendChild(bt7); 
+      }
+
+      var bt8 = document.createElement('button'); var counter=0;
+          bt8.innerHTML = sp8.innerHTML;
+          bt8.style.padding = 20;
+          bt8.style.borderRadius = '50%';
+          bt8.style.margin = 3;
+          bt8.style.height = 50;
+          bt8.style.width = 88;
+          bt8.style.backgroundColor= 'red';
+
+      function btn8(){
+        counter++;
+        if(counter<=9)
+        {
+        span1.innerHTML = counter;
+        mdiv.appendChild(bt8);
+        }  
+      }
+
+        </script>
+    </body>
+</html>
